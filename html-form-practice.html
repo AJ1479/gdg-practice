@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+  <!--<![endif]-->
+  <head>
+    <style>
+      h1 {
+        text-align: center;
+      }
+      form {
+        text-align: center;
+      }
+      input[type="text"],
+      input[type="password"] {
+        width: 20%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        box-sizing: border-box;
+      }
+
+      button {
+        background-color: DodgerBlue;
+        padding: 14px 20px;
+        margin: 8px 0;
+        border: none;
+        cursor: pointer;
+        width: 20%;
+      }
+
+      button:hover {
+        opacity: 0.8;
+      }
+
+      .container {
+        padding: 16px;
+      }
+    </style>
+    <link rel="stylesheet" href="styles.css" />
+    <h1>Login page</h1>
+    <br />
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title></title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+  <body>
+    <!--[if lt IE 7]>
+      <p class="browsehappy">
+        You are using an <strong>outdated</strong> browser. Please
+        <a href="#">upgrade your browser</a> to improve your experience.
+      </p>
+    <![endif]-->
+    <form action="Untitled-1.html">
+      <div class="container">
+        <input
+          type="text"
+          placeholder="Name"
+          name="name"
+          required
+        /><br /><br />
+        <input type="text" placeholder="Age" name="age" required /><br /><br />
+        <input
+          type="text"
+          placeholder="Username"
+          name="uname"
+          required
+          maxlength="10"
+          pattern="(?=.*\d)(?=.*[A-Z]).{2,}"
+        /><br /><br />
+        <input
+          type="password"
+          placeholder="Password"
+          name="pass"
+          required
+          pattern="(?=.*[A-Z]).{1,}"
+        /><br /><br />
+
+        <button type="submit">Submit</button>
+      </div>
+    </form>
+    <script src="" async defer></script>
+  </body>
+</html>
